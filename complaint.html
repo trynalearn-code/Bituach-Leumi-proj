@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hed">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr_EwCVFEsAhzU4xPXLfatIm7tXRUSGQGiLPxUJaNJaKzQhZxTnDJxgXFg&s=10"
+            alt="Bituach leumi logo">
+        <div>
+            <h2 class="bituach">Bituach Leumi</h2>
+            <p class="by">By your side for the important times in life</p>
+        </div>
+        <p class="personal">Personal Service: for you</p>
+
+    </header>
+    <nav class="navv">
+        <a class="secondlink" href="diary.html">Complaint Diary</a>
+        <a class="activelink" href="complaint.html">File a New Complaint</a>
+    </nav>
+
+     <main>
+        <div class="words">
+            <p class="home">Home Page/
+            <p>
+            <p class="complaint">Complaint Diary</p>
+        </div>
+        <div class="title">
+            <p class="bituach">Open a new complaint</p>
+            <h1 class="diary">File a complaint</h1>
+            <h3 class="by">Bituach Leumi is by your side for the important times in life</h3>
+            <button class="btn">Submit a new Complaint</button>
+        </div>
+        <div class="note">
+            <p class="i">i</p>
+            <div class="word">
+                <h3 class="know">Importain to know</h3>
+                <p class="saved">Complaints are saved in this program itself, and isn't sent to Bituach Leumi or
+                    anywhere else</p>
+            </div>
+        </div>
+
+        <form id="forms" action="">
+            <div class="heds">
+                <article>
+                <p class="det">Details</p>
+                <h3>Fill out a Complaint Form</h3>
+                </article>
+                <p class="required">required fields *</p>
+            </div>
+
+            <div class="complaintable">
+                <label for="#name">Name</label>
+                <input type="text" name="name" id="name">
+
+                <label for="#topic">Topic</label>
+                <select name="topic" id="topic">
+                    <option value="">Bad Customer Service</option>
+                    <option value="">Want more moyne</option>
+                    <option value="">Technical Help</option>
+                    <option value="">Long Wait Time</option>
+                    <option value="">Just send some hate</option>
+                </select>
+                
+                <label for="#urgency">Urgency</label>
+                <select name="urgency" id="urgency">
+                    <option value="">Not Urgent</option>
+                    <option value="">Urgent</option>
+                    <option value="">Very Urgent</option>
+                    <option value="">Completely Urgent</option>
+                    <option value="">The most Urgent Urgent</option>
+                    
+                </select>
+                
+                <label for="#description">Complaint Description</label>
+                <textarea name="description" id="description"></textarea>
+
+            </div>
+
+            <div class="buttons">
+                <button type="reset">Reset</button>
+                <button type="submit">Send Complaint</button>
+            </div>
+
+            
+        </form>
+        
+    </main>
+    <script src="sources.js"></script>
+</body>
+</html>
