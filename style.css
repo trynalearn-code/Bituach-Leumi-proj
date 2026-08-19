@@ -153,37 +153,38 @@ main {
     background-color: azure;
 }
 
-
-.tops,
 .bottoms {
+    width: 100%;
+}
+
+.tops, .complaint-row {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     gap: 3px;
-    border: 3px solid rgb(183, 222, 249);
-    padding: 1rem;
 }
 
 .tops {
     background-color: rgb(136, 195, 237);
+    padding:10px
 }
 
-.complaintable{
+.complaintable {
     display: grid;
     height: 60vh;
 }
 
-.complaintable label::after{
+.complaintable label::after {
     content: "*";
     color: red;
 }
 
-.buttons{
+.buttons {
     display: flex;
-    justify-content:space-around ;
+    justify-content: space-around;
     padding: 1rem;
 }
 
-.buttons button{
+.buttons button {
     width: 200px;
     background-color: var(--med-blue);
     color: aliceblue;
@@ -192,11 +193,16 @@ main {
     border-color: aliceblue;
 }
 
-.heds{
+.heds {
     display: grid;
     grid-template-columns: 4fr 1fr;
 }
 
-.required{
+.required {
     color: red;
+}
+
+.complaint-row{
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
 }

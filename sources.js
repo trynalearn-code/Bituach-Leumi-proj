@@ -27,6 +27,17 @@ form.addEventListener("submit", (e)=>{
     const itemJson = localStorage.getItem("complaints") ?? "[]"
     const complaints = JSON.parse(itemJson)
 
-    
+    complaints.push(complaint)
+
+    localStorage.setItem("complaints", JSON.stringify(complaints))
 })
+
+function addIndex(){
+    const allComplaints = localStorage.getItem("complaints") ?? []
+    const complaints = JSON.parse(allComplaints)
+
+    complaints.forEach((complaint) => {
+        
+    });
+}
 
